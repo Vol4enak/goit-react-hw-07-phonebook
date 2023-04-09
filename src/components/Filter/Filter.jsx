@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { trowFilterValue, visibleContact } from 'redux/filterLogic';
+import { trowFilterValue } from 'redux/filterLogic';
 export function Filter() {
   const dispatch = useDispatch();
 
