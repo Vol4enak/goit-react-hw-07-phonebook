@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { nanoid } from 'nanoid';
-import { trowFilterValue } from 'redux/filterLogic';
 import { addContact } from 'redux/contactsOperation';
 import { useDispatch, useSelector } from 'react-redux';
 export default function ContactForm() {
