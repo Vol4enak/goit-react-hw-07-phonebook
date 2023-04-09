@@ -1,12 +1,17 @@
 import React from 'react';
-import { deleteContact} from 'redux/contactLogic';
+import { deleteContact } from 'redux/contactsOperation';
+import { filteredContacts } from 'redux/selector';
 import { useSelector, useDispatch } from 'react-redux';
 import { ContactInfo, ContactButtom } from './ContactList.styled';
 
+
+ 
+    
+
 export const ContactList = () => {
-  const stateContacts = useSelector(state => state.phoneBook.contacts);
+  const stateContacts = useSelector(filteredContacts);
   const dispatch = useDispatch();
-  
+ 
   return (
     <>
       <ul>

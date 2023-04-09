@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { trowFilterValue, visibleContact } from 'redux/contactLogic';
+import { trowFilterValue, visibleContact } from 'redux/filterLogic';
 export function Filter() {
   const dispatch = useDispatch();
 
@@ -11,7 +11,6 @@ export function Filter() {
         type="text"
         onChange={e => {
           dispatch(trowFilterValue(e.currentTarget.value));
-          dispatch(visibleContact());
         }}
       />
     </>
